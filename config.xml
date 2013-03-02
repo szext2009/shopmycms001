@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns        = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id      = "com.favamall.shopmycms001"  
+    version     = "1.1.1"> <!-- 注释：应用版本--> 
+    <name>美女如云</name><!-- 注释：应用名称，显示在移动终端桌面上和应用Logo一起 --> 
+    <description><!-- 注释：应用描述 -->
+        美女如云
+    </description> 
+    <author href="http://www.mywebsoft.com" email="pangszhk@gmail.com"> 
+        mywebsoft
+    </author>
+ 
+    <gap:platforms> <!-- 注释：支持平台 -->
+        <gap:platform name="android" minVersion="2.1" />
+        <gap:platform name="webos" />
+        <gap:platform name="symbian.wrt" />
+        <gap:platform name="blackberry" project="widgets"/>
+    </gap:platforms>
+    <icon src="icons/logo.png" gap:role="default" /> <!-- 注释：应用Logo，显示在移动终端桌面上和应用名称一起 -->
+    <gap:splash src="icons/loading.jpg"/> <!-- 注释： 程序启动时显示图像-->
+    <!--  程序需使用的Anbdroid权限 -->
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+</widget>
