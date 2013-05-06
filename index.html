@@ -129,6 +129,83 @@
 .downdetail{padding-top:10px;border-top:1px solid #eee;line-height:25px;font-size:1em;text-align:left} 
 .downdetail p {font-size:1em;line-height:25px;}
 /* 系统通用功能模版风格下载详细页面结束 */
+.ux-cover{background-color:#333333;position:relative;overflow:hidden;display:-moz-box;display:-webkit-box;display:-ms-box;display:box;-webkit-perspective:1000;perspective:1000;-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0)}.ux-cover .ux-cover-scroller{-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;-o-transition-duration:0.4s;transition-duration:0.4s;-moz-transition-timing-function:easy-out;-webkit-transition-timing-function:easy-out;-o-transition-timing-function:easy-out;transition-timing-function:easy-out;-webkit-transition-property:-webkit-transform}.ux-cover .ux-cover-scroller .ux-cover-item{padding-top:1px;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;-o-transition-duration:0.4s;transition-duration:0.4s;-moz-transition-timing-function:easy-out;-webkit-transition-timing-function:easy-out;-o-transition-timing-function:easy-out;transition-timing-function:easy-out;-webkit-transition-property:-webkit-transform;background-color:#333333;position:absolute}.ux-cover .ux-cover-item-inner{background-color:#d0d0d0;-webkit-box-reflect:below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(rgba(0, 0, 0, 0.3)))}
+
+.ux-cover .my-cover-item {
+			position: relative;
+			background-color: #BBB;
+			-webkit-box-shadow: 0px 0px 10px #333;
+		}
+		/**
+		 * Different styles for landscape and portrait mode
+		 */	
+		.ux-cover-landscape .my-cover-item{
+			font-size: 8px;
+		}
+		
+		.ux-cover-portrait .my-cover-item{
+			font-size: 12px;
+		}
+
+		/* This is just to make the demo looks good on desktop */
+		.x-desktop .my-cover-item{
+			font-size: 15px;
+		}
+
+		.my-cover-item .image{
+			position:absolute;
+			top:0;
+			bottom:0;
+			width: 100%;
+			text-align: center;
+			overflow: hidden;
+			z-index: 1;
+		}
+		
+		.my-cover-item .image img{
+			height: 100%;
+		}
+
+		.my-cover-item .dev {
+			color: black;
+		}
+		
+		.my-cover-item .company {
+			position: absolute;
+			opacity: 1;
+			color: #C0C0C0;
+			background: black;
+			bottom: 0px;
+			height: 20px;
+			width: 100%;
+			z-index: 10;
+		}
+
+		/*Do something cool with selected item*/
+		.x-item-selected .my-cover-item{
+			background-color: #FFF;
+
+		}
+		.my-photo-item {			
+		 	margin:5px;
+		}
+		.my-photo-item .image{	
+			
+		} 	
+		.my-photo-item .image img{			
+			text-align: center;
+			border:1px solid #fff;
+			
+		} 	
+		.my-photo-item .title {
+		    font-size: 12px; 
+			color: #C0C0C0;
+			background:#FFFFF;
+			height: 20px;
+			max-width: 200px;
+			text-align: left;
+			overflow: hidden;
+		}
 	</style>
  <script type="text/javascript" charset="utf-8">
 	 
